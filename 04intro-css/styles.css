@@ -41,6 +41,10 @@ nav a {
     font-weight: 700;
 }
 
+nav li.active a {
+    color: #CAD2C5;
+    background-color: #84A98C;
+}
 nav li a:hover {
     color: #52796F;
     background-color: #CAD2C5;
