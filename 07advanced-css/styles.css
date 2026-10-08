@@ -1,0 +1,263 @@
+/* box modeling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+}
+/* colors
+CAD2C5
+84A98C
+52796F
+354F52
+2F3E46
+*/
+
+/* header styling */
+header {
+    background-color:#354F52;
+    padding: 1rem 2vw;
+    background-image: linear-gradient(to bottom, #354F52, #52796F);
+    display: flex;
+}
+header span {
+    margin: 0;
+    color: #eeeeee;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.logo {
+margin-right: 10px;
+}
+
+
+/* small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #52796F;
+        background-image: linear-gradient(to bottom, #52796F, #84A98C);
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #CAD2C5;
+        text-decoration: none;
+        border-bottom: solid 1px #CAD2C5;
+        font-weight: 700;
+    }
+    nav .active a {
+        background-color: #CAD2C5;
+        color: #354F52;
+    }
+
+} /* end small screen navigation */
+
+@media only screen and (min-width: 601px) {
+
+nav {
+    background-color: #52796F;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px; 
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #CAD2C5;
+    font-weight: 700;
+}
+
+nav li.active a {
+    color: #354F52;
+    background-color: #cad2c5;
+}
+
+nav li a:hover {
+    color: #52796F;
+    background-color: #CAD2C5;
+}
+} /* end large screen navigation */
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #2f3e46;
+}
+main h2 {
+    color: #354F52;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #333;
+}
+main ol {
+    padding: .5rem 30px;
+    border-left: 2px solid #354F52;
+}
+main dl dt {
+    color: #354F52;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+main dl dd {
+    font-size: .9rem;
+    margin-left: 20px;
+}
+main ul {
+    list-style-type: disc;
+}
+main ul li {
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main strong {
+    font-weight: 700;
+    color:#2f3e46;
+}
+main em {
+    font-weight: 400;
+}
+main address {
+    font-style: normal;
+    font-size: .9rem;
+    color: #354F52;
+    border-radius: 5px;
+    border: 1px solid #354F52;
+    width: 300px;
+    text-align: center;
+    padding: 1rem 10px;
+    margin: 0 auto;
+}
+main a {
+    color: #354F52;
+}
+main a:hover {
+    color: rgb(47, 62, 70);
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+
+/* main image stuff here */
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float:right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    font-size: .8rem;
+    color: #354F52;
+    text-align: center;
+}
+
+/* Gallery Stuff  */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+div.gallery figure {
+    margin: 1rem 0;
+    flex-basis: 30%;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #354F52;
+}
+div.gallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* form styling */
+.joinform fieldset {
+    border: 1px solid #354F52;
+    border-radius: 5px;
+    padding: 1rem 10px;
+    margin-bottom: 1rem;
+}
+.joinform legend {
+    font-weight: 700;
+    color: #354F52;
+}
+.joinform label {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    color: #354F52;
+}
+.joinform select, .joinform input[type="text"], .joinform input[type="email"], .joinform input[type="tel"] {
+    display: block;
+    width: 200px;
+    padding: .5rem;
+    border: 1px solid #354F52;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: "Roboto Mono", monospace;
+    background-color:#eeeeee
+}
+.joinform textarea {
+    display: block;
+    width: 300px;
+    height: 100px;
+    padding: .5rem;
+    border: 1px solid #354F52;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+.joinform input[type="submit"] {
+    background-color:#354F52;
+    color: #eeeeee;
+    font-weight: 700;
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer styling */
+footer {
+    background-color: #354F52;
+    color: #CAD2C5;
+    text-align: center;
+    padding: 1rem 10px;
+    font-size: .9rem;
+    clear: both;
+}
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #CAD2C5;
+}
+
+/* limit overall width of page */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
