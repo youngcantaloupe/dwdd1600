@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Porter Sampson">
+    <meta name="description" content="Form to Join a Minecraft Server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>STTWMP</title>
+</head>
+
+<body>
+    <header><span>Surviving the 2-week Minecraft Phase</span></header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Surviving</a></li>
+            <li><a href="minecraft.html">Minecraft Burnout</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="active"><a href="form.html">Join Server</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join Our Minecraft Server</h1>
+
+        <form method="get" class="joinform" action="thanks.html">
+
+            <label>
+                <p>Thanks for your interest in joining our server! Please fill out this form to request an IP address.
+                </p>
+            </label>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Discord:
+                    <input type="text" name="discord" required>
+                </label>
+                <label>Username:
+                    <input type="text" name="uname" required>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>Phone:
+                    <input type="tel" name="phone" required placeholder="000-000-0000">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gamemode Preferences</legend>
+                <label><input type="radio" name="gamemode" value="survival"> Survival</label>
+                <label><input type="radio" name="gamemode" value="creative"> Creative</label>
+                <label><input type="radio" name="gamemode" value="hardcore"> Hardcore</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Play Style</legend>
+                <label><input type="checkbox" name="builder" value="chosen"> Builder</label>
+                <label><input type="checkbox" name="miner" value="chosen"> Miner</label>
+                <label><input type="checkbox" name="redstoner" value="chosen"> Redstoner</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Play Times</legend>
+                <select name="playtime">
+                    <option value="">Select a time</option>
+                    <option value="morning">Morning (6am-12pm)</option>
+                    <option value="afternoon">Afternoon (12pm-6pm)</option>
+                    <option value="evening">Evening (6pm-12am)</option>
+                    <option value="night">Night (12am-6am)</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What made you interested in our server?</legend>
+                <label>Comments:
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Request to Join Server">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 &bull; Porter Sampson &bull; Web Essentials</p>
+    </footer>
+</body>
+
+</html>
